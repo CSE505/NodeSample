@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="app.js"></script>
+    <script src="controllers/tableController.js"></script>
+    
+    <title>Node Integration</title>
+</head>
+
+<body ng-app="myApp" ng-controller="ctrl">
+    
+    <table border="1"
+           cellpadding="10px"    
+           cellspacing="10px"
+           align="center"
+           style="font-size:30px;text-align:center">
+        <thead style="background-color:darkgrey">
+            <tr>
+                <th>Emp_ID</th>
+                <th>Emp_Name</th>
+                <th>Emp_Salary</th>
+            </tr>
+        </thead> 
+        <tbody>
+            <tr ng-repeat ="result">
+                <td>{{X.Emp_ID}}</td>
+                <td>{{X.Emp_Name}}</td>
+                <td>{{X.Emp_Salary}}</td>
+            </tr>
+        </tbody> 
+    </table>
+
+    <script>
+        
+    </script>
+</body>
+</html>
